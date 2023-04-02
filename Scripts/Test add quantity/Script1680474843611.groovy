@@ -19,17 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.navigateToUrl('http://3.93.60.87:3000/')
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/button_add to cart'))
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/button_Order_dropdownCartButton'))
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/button_'))
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/button_Order_dropdownCartButton'))
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/label_Quantity 2'))
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/button_-'))
+
+WebUI.click(findTestObject('Object Repository/Quantity/Page_Home/button_Order_dropdownCartButton'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Quantity/Page_Home/label_Quantity 1'), 'Quantity: 1')
+
 WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://3.93.60.87:3000/login')
-
-WebUI.setText(findTestObject('Object Repository/Page_Home/input_Username_email'), 'admin')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Home/input_Password_password'), '4nvbrPglk7k=')
-
-WebUI.click(findTestObject('Object Repository/Page_Home/button_Login'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Home/a_Queuing'), 'Queuing')
 
